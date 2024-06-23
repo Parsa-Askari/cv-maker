@@ -1,0 +1,168 @@
+/* basic contents */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: Vazir;
+    src: url("../resources/fonts/Vazirmatn-Medium.ttf");
+    font-weight: normal;
+}
+@font-face{
+    font-family: Vazir;
+    src: url("../resources/fonts/Vazirmatn-Bold.ttf");
+    font-weight: bold;
+}
+.container {
+    width: 68rem;
+    /* height: 100%; */
+    margin: 1.5rem auto;
+    display: flex;
+    /* flex-direction: row; */
+    
+}
+body{
+    font-family: Vazir;
+    margin: 0;
+    padding: 0;
+}
+/* ============================= main content =============================*/
+.main-item-dim{
+    width: 100%;
+    height: 100%;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    width: 68.75%;
+    height: 100vh;
+    direction: rtl;
+}
+
+/* .top-bar{
+    background-color: aqua;
+}
+.jobs{
+    background-color: red;
+
+}
+.education{
+    background-color: blue;
+
+}
+.skills{
+    background-color: blueviolet;
+
+}
+.languages{
+    background-color: brown;
+
+} */
+/* ============================= side content ==============================*/
+
+/* .side-item-dim{
+    width: 100%;
+    height: 100%;
+    
+} */
+.side-content{
+    display: inline-block;
+    position: relative;
+    /* height: 3000px; */
+    /* flex-direction: column; */
+    /* width: 40%;
+    height: 100%; */
+    
+    direction: rtl;
+}
+.side-background-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color:cornflowerblue;
+    z-index: -1;
+}
+.info-header{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.image-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-pic{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    margin: 15px;
+}
+
+.personal-info,.job-info,.contact-info,.socials{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.contact-info .row{
+    margin-bottom: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.contact-info span{
+    margin: 10px;
+}
+
+
+.personal-info .row{
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 8px;
+    
+}
+.personal-info .value{
+    font-weight: bold;
+}
+
+.job-info .row{
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 2px;
+}
+.job-info .value{
+    font-weight: bold;
+}
+.LOGO {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url("../resources/quera.svg") center bottom -20rem / 300% no-repeat;
+    /* background:no-repeat center/80% url("../img/image.png");; */
+    z-index: -1;
+}
+/*
+.contact-info{
+
+}
+.personal-info{
+    background-color: chocolate;
+}
+.job-info{
+    background-color: bisque;
+}
+.socials{
+    background-color: chartreuse;
+}
+.logo{
+    background-color: tomato;
+} */
